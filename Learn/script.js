@@ -1,5 +1,11 @@
-document.getElementById("demo").addEventListener("click", myFunction);
+var divContent = document.getElementById("added-content");
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+function clickContent() {
+  divContent.innerHTML = "Hallo Welt";
+  setTimeout(() => {
+    alert("Hello");
+  }, 1500);
+  
 }
+
+document.getElementById("button-content").addEventListener("click", clickContent);
